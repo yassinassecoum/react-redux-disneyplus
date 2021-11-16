@@ -6,7 +6,6 @@ import { useNavigate } from "react-router-dom";
 import {
   selectUserName,
   selectUserPhoto,
-  selectUserEmail,
   setUserLoginDetails,
   setSignOutState,
 } from "../features/users/userSlice";
@@ -121,7 +120,8 @@ const Logo = styled.a`
   max-height: 70px;
   font-size: 0;
   cursor: pointer;
-  display:inline-block img {
+  display: inline-block;
+  img {
     display: block;
     width: 100%;
   }
@@ -185,9 +185,9 @@ const NavMenu = styled.div`
     }
   }
 
-  /* @media (max-width : 768px) {
-    display:none;
-} */
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 const Login = styled.a`
