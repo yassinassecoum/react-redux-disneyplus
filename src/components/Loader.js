@@ -4,7 +4,7 @@ import ContentLoader from "react-content-loader";
 export const Loader = (props) => {
   return (
     <ContentLoader
-      speed={2}
+      speed={0.8}
       width="100%"
       height="100%"
       style={{ transform: "translate(-0px, -64px)", marginTop: "4rem" }}
